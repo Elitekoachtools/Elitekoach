@@ -6,7 +6,7 @@ export const Purpose: React.FC = () => {
       <div className="section-container">
         <div className="grid md:grid-cols-2 gap-20 items-start">
           <div className="space-y-8">
-            <span className="inline-block px-4 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] font-bold uppercase tracking-widest text-white/60">
+            <span className="inline-block ring-brand-accent px-4 py-1 rounded-full bg-white/5 border border-brand-accent text-[11px] font-bold uppercase tracking-widest text-white/60">
                 Our purpose
             </span>
             

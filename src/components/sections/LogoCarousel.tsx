@@ -19,7 +19,7 @@ export const LogoCarousel: React.FC = () => {
 
   return (
     <section className="py-12 bg-brand-bg/50 border-y border-white/5 overflow-hidden">
-      <div className="section-container flex items-center gap-10">
+      <div className="section-container flex flex-col items-center gap-10">
         <p className="flex-shrink-0 text-[11px] font-black uppercase tracking-[0.2em] text-brand-accent whitespace-nowrap">Powered by:</p>
         
         <div className="flex overflow-hidden">
@@ -27,11 +27,10 @@ export const LogoCarousel: React.FC = () => {
             {scrollingLogos.map((logo, index) => (
                 <div
                 key={index}
-                className="flex-shrink-0 flex items-center gap-3 grayscale hover:grayscale-0 opacity-40 hover:opacity-100 transition-all duration-500 cursor-pointer"
+                className="flex-shrink-0 flex items-center gap-3 grayscale hover:grayscale-0  transition-all duration-500 cursor-pointer"
                 >
                 {logo.icon}
-                <span className="text-sm font-bold tracking-tight text-white/60">{logo.name}</span>
-                </div>
+                 </div>
             ))}
             </div>
         </div>
