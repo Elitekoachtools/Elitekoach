@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Figtree:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #0F172A;
+  --color-brand-accent: #BEF264;
+  --color-brand-secondary: #111E2F;
+  --color-brand-muted: #94A3B8;
+  
+  --font-sans: 'Figtree', 'Inter', sans-serif;
+  --font-serif-accent: 'Playfair Display', serif;
+
+  --animate-marquee: marquee 50s linear infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-white font-sans antialiased selection:bg-brand-accent selection:text-brand-bg;
+    margin: 0;
+  }
+}
+
+@layer utilities {
+  @utility section-container {
+    @apply max-w-7xl mx-auto px-6 sm:px-10 lg:px-16;
+  }
+
+  @utility heading-tight {
+    @apply tracking-[-0.05em] leading-[0.95];
+  }
+
+  @utility nike-heading {
+    @apply font-sans uppercase heading-tight font-black text-[clamp(2.5rem,8vw,6rem)];
+  }
+
+  @utility section-title {
+    @apply font-sans uppercase heading-tight text-[clamp(2rem,6vw,4rem)] font-extrabold;
+  }
+
+  @utility text-balance {
+    text-wrap: balance;
+  }
+
+  @utility italic-serif {
+    @apply font-serif-accent italic text-brand-accent;
+  }
+
+  @utility glass-card {
+    @apply bg-white/5 border border-white/10 backdrop-blur-md rounded-3xl;
+  }
+}
