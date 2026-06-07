@@ -25,32 +25,31 @@
   }
 }
 
-@layer utilities {
-  @utility section-container {
-    @apply max-w-7xl mx-auto px-6 sm:px-10 lg:px-16;
-  }
-
-  @utility heading-tight {
-    @apply tracking-[-0.05em] leading-[0.95];
-  }
-
-  @utility nike-heading {
-    @apply font-sans uppercase heading-tight font-black text-[clamp(2.5rem,8vw,6rem)];
-  }
-
-  @utility section-title {
-    @apply font-sans uppercase heading-tight text-[clamp(2rem,6vw,4rem)] font-extrabold;
-  }
-
-  @utility text-balance {
-    text-wrap: balance;
-  }
-
-  @utility italic-serif {
-    @apply font-serif-accent italic text-brand-accent;
-  }
-
-  @utility glass-card {
-    @apply bg-white/5 border border-white/10 backdrop-blur-md rounded-3xl;
-  }
+@utility section-container {
+  @apply max-w-7xl mx-auto px-6 sm:px-10 lg:px-16;
 }
+
+@utility heading-tight {
+  @apply tracking-[-0.05em] leading-[0.95];
+}
+
+@utility nike-heading {
+  @apply font-sans uppercase heading-tight font-black text-[clamp(2.5rem,8vw,6rem)];
+}
+
+@utility section-title {
+  @apply font-sans uppercase heading-tight text-[clamp(2rem,6vw,4rem)] font-extrabold;
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility italic-serif {
+  @apply font-serif-accent italic text-brand-accent;
+}
+
+@utility glass-card {
+  @apply bg-white/5 border border-white/10 backdrop-blur-md rounded-3xl;
+}
+
