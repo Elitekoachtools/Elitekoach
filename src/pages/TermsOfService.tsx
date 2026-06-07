@@ -1,19 +1,15 @@
-import React, { useEffect } from "react";
-import EliteKoachLogo from "../assets/EliteKoach-logo.svg";
+import React from 'react';
+import { ArrowUpRight } from 'lucide-react';
+import { Button } from '../components/common/Button';
+import { GlassCard } from '../components/common/GlassCard';
 
-export const Footer: React.FC = () => {
-  useEffect(() => {
-    const handleNavigate = () => {};
-    window.addEventListener("navigate", handleNavigate);
-    return () => window.removeEventListener("navigate", handleNavigate);
-  }, []);
-
+const TermsOfService: React.FC = () => {
   return (
-    <footer className="py-10 bg-brand-bg border-t border-white/5">
-      <div className="section-container">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-2 opacity-60">
-              <svg
+    <div className="min-h-screen bg-brand-bg">
+      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-brand-bg/80 border-b border-white/5">
+        <div className="section-container flex items-center justify-between h-20">
+          <div className="flex items-center gap-2 cursor-pointer" onClick={() => window.dispatchEvent(new CustomEvent('navigate', { detail: 'landing' }))}>
+          <svg
             width="168"
             height="24"
             viewBox="0 0 168 24"
@@ -49,27 +45,64 @@ export const Footer: React.FC = () => {
             </defs>
           </svg>
           </div>
+          <Button variant="primary" className="!bg-white !text-brand-bg hover:!bg-brand-accent !rounded-lg !py-2 !px-5 !text-[13px] !font-bold">
+            Join the Community <ArrowUpRight size={16} />
+          </Button>
+        </div>
+      </nav>
 
-          <p className="text-[11px] font-bold text-white/30 uppercase tracking-[0.2em]">
-            EliteKoach © 2026 - All rights reserved
-          </p>
+      <main className="pt-32 pb-20">
+        <div className="section-container max-w-3xl">
+          <div className="mb-12">
+            <h1 className="text-brand-accent font-sans uppercase tracking-widest text-xs font-bold mb-4">Terms of Service</h1>
+            <h2 className="font-serif-accent italic text-[clamp(2rem,5vw,3.5rem)] font-bold text-white leading-tight">
+              Terms & Conditions
+            </h2>
+            <p className="text-white/60 mt-4 text-lg max-w-2xl">
+              Last updated: June 2026
+            </p>
+          </div>
 
-          <div className="flex items-center gap-8 text-[11px] font-bold text-white/40 uppercase tracking-widest">
-            <button
-              onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "privacy" }))}
-              className="hover:text-white transition-colors"
-            >
-              Privacy Policy
-            </button>
-            <button
-              onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "terms" }))}
-              className="hover:text-white transition-colors"
-            >
-              Terms of Service
-            </button>
+          <div className="space-y-8 text-white/80 text-[15px] leading-relaxed font-sans">
+            <GlassCard>
+              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">1. Acceptance of Terms</h3>
+              <p>By accessing or using EliteKoach's services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services. We reserve the right to modify these terms at any time, and your continued use constitutes acceptance of updated terms.</p>
+            </GlassCard>
+
+            <GlassCard>
+              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">2. Use of Services</h3>
+              <p>Our services are provided for personal, non-commercial use only. You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the service, use of the service, or access to the service without express written permission from EliteKoach.</p>
+            </GlassCard>
+
+            <GlassCard>
+              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">3. User Accounts</h3>
+              <p>When you create an account with us, you must provide accurate and complete information. You are responsible for safeguarding the password that you use to access the service and for any activities or actions under your password. You agree not to disclose your password to any third party.</p>
+            </GlassCard>
+
+            <GlassCard>
+              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">4. Intellectual Property</h3>
+              <p>The service and its original content, features, and functionality are and will remain the exclusive property of EliteKoach and its licensors. The service is protected by copyright, trademark, and other laws. Our trademarks may not be used in connection with any product or service without the prior written consent of EliteKoach.</p>
+            </GlassCard>
+
+            <GlassCard>
+              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">5. Limitation of Liability</h3>
+              <p>In no event shall EliteKoach, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses.</p>
+            </GlassCard>
+
+            <GlassCard>
+              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">6. Governing Law</h3>
+              <p>These Terms shall be governed and construed in accordance with the laws of the European Union and the Republic of Cyprus, without regard to conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.</p>
+            </GlassCard>
+
+            <GlassCard>
+              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">7. Contact Information</h3>
+              <p>If you have any questions about these Terms of Service, please contact us at legal@elitekoach.com or through the contact form on our website.</p>
+            </GlassCard>
           </div>
         </div>
-      </div>
-    </footer>
+      </main>
+    </div>
   );
 };
+
+export default TermsOfService;

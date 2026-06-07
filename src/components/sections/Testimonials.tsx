@@ -48,11 +48,7 @@ export const Testimonials: React.FC = () => {
   return (
     <section className="py-24 bg-brand-accent">
       <div className="section-container">
-        <div className="flex flex-col items-center mb-16">
-            <button className="text-[11px] font-black uppercase tracking-[0.2em] text-brand-bg border border-brand-bg/20 rounded-full px-8 py-3 hover:bg-brand-bg hover:text-white transition-colors">
-                Join the Community
-            </button>
-        </div>
+       
 
         <div className="max-w-6xl mx-auto relative group">
           <div className="bg-white rounded-[40px] overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.1)] flex flex-col md:flex-row min-h-[500px]">

@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/layout/Navbar';
 import { Hero } from './components/sections/Hero';
 import { LogoCarousel } from './components/sections/LogoCarousel';
@@ -10,8 +11,26 @@ import { BenefitsMasonry } from './components/sections/BenefitsMasonry';
 import { FAQSection } from './components/sections/FAQSection';
 import { FinalCTA } from './components/sections/FinalCTA';
 import { Footer } from './components/layout/Footer';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+
+type Page = 'landing' | 'privacy' | 'terms';
 
 function App() {
+  const [page, setPage] = useState<Page>('landing');
+
+  useEffect(() => {
+    const handler = (e: Event) => {
+      const custom = e as CustomEvent<Page>;
+      setPage(custom.detail);
+    };
+    window.addEventListener('navigate', handler);
+    return () => window.removeEventListener('navigate', handler);
+  }, []);
+
+  if (page === 'privacy') return <PrivacyPolicy />;
+  if (page === 'terms') return <TermsOfService />;
+
   return (
     <div className="min-h-screen bg-brand-bg text-white selection:bg-brand-accent selection:text-brand-bg">
       <Navbar />
