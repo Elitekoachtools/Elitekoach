@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "../common/Button";
 import { ArrowUpRight, Menu, X } from "lucide-react";
-import EliteKoachLogo from "@assets/EliteKoach-logo.svg";
 
 export const Navbar: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
