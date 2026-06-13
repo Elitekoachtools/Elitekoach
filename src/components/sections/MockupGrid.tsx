@@ -1,26 +1,31 @@
 import React from "react";
+import Mob1 from '../../assets/sneakpeak/mob-1.png'
+import Mob2 from '../../assets/sneakpeak/mob-2.png'
+import Mob3 from '../../assets/sneakpeak/mob-3.png'
+import Mob4 from '../../assets/sneakpeak/mob-4.png'
+
 
 export const MockupGrid: React.FC = () => {
   const items = [
     {
       title: "Join the Growth Community",
       desc: "It all begins with a simple step – creating your account. Join a community of learners, seekers, and achievers, ready to level up together.",
-      img: "https://framerusercontent.com/images/FadBUb9XFrNoAaTgKN6fVhYxenc.png",
+      img: Mob1,
     },
     {
       title: "Your goals, your way.",
       desc: "Choose from a variety of categories that matter to you – whether it's career growth, personal wellness, or creative skills. Build a personalized experience aligned with your passions and priorities.",
-      img: "https://framerusercontent.com/images/wZSpYNgw7SFsHjccGgtjAbAlZQ.png",
+      img: Mob2,
     },
     {
       title: "Find Your Perfect Coach",
       desc: "Explore a diverse range of professional coaches with expertise tailored to your goals. Select the right coach who aligns with your unique aspirations.",
-      img: "https://framerusercontent.com/images/wTSdrgCPZ6Hh7Faerw2M5igc8c.png",
+      img: Mob3,
     },
     {
       title: "Learn and grow with elite talent",
       desc: "Book a session with your chosen coach to receive tailored feedback, expert insights, and actionable plans to improve. With their support, you'll tackle challenges, refine your skills, and grow beyond expectations.",
-      img: "https://framerusercontent.com/images/zolkvCWrqxeFPkdfFS07TtXCJAI.png",
+      img: Mob4,
     },
   ];
 
@@ -46,7 +51,7 @@ export const MockupGrid: React.FC = () => {
               key={idx}
               className="bg-white rounded-[48px] p-12 flex flex-col items-center text-center shadow-2xl"
             >
-              <div className="relative w-full aspect-[4/5] mb-12 bg-slate-50 rounded-[40px] overflow-hidden flex items-center justify-center p-8">
+              <div className="relative w-full aspect-5/5 mb-12 bg-slate-50 rounded-[40px] overflow-hidden flex items-center justify-center p-8">
                 <img
                   src={item.img}
                   alt={item.title}

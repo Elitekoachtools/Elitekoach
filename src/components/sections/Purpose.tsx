@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Purpose: React.FC = () => {
   return (
-    <section className="py-24 bg-brand-bg">
+    <section id='about' className="py-24 bg-brand-bg">
       <div className="section-container">
         <div className="grid md:grid-cols-2 gap-20 items-start">
           <div className="space-y-8">

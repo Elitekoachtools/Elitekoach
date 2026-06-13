@@ -1,8 +1,26 @@
 import React from "react";
 
+import Jordan from '../../assets/benefits/jordan.png'
+import Benefit from '../../assets/benefits/benefit.png'
+import Ballet from '../../assets/benefits/ballet.png'
+
+
+import Mentor1 from '../../assets/benefits/mentor-1.png'
+import Mentor2 from '../../assets/benefits/mentor-2.png'
+import Mentor3 from '../../assets/benefits/mentor-3.png'
+import Mentor4 from '../../assets/benefits/mentor-4.png'
+import Mentor5 from '../../assets/benefits/mentor-5.png'
+import Mentor6 from '../../assets/benefits/mentor-6.png'
+
+
+
 export const BenefitsMasonry: React.FC = () => {
+
+  const mentors = [Mentor1,Mentor2,Mentor3,Mentor4,Mentor5,Mentor6]
+
+
   return (
-    <section className="bg-brand-accent py-24 pb-32 overflow-hidden">
+    <section id="benefits" className="bg-brand-accent py-24 pb-32 overflow-hidden">
       <div className="section-container">
         <div className="text-center mb-24 max-w-3xl mx-auto">
           <span className="inline-block px-4 py-1 rounded-full bg-brand-bg/5 border border-brand-bg/10 text-[11px] font-bold uppercase tracking-widest text-brand-bg/60 mb-8">
@@ -47,7 +65,7 @@ export const BenefitsMasonry: React.FC = () => {
                     }}
                   >
                     <img
-                      src={`https://i.pravatar.cc/100?u=mentor${i}`}
+                      src={`${mentors[i]}`}
                       className="w-full h-full object-cover"
                       alt="Mentor"
                     />
@@ -69,9 +87,9 @@ export const BenefitsMasonry: React.FC = () => {
 
           {/* Card 2: Results (Woman with headphones) */}
           <div className="lg:col-span-7 bg-white rounded-[40px] overflow-hidden shadow-lg flex flex-col">
-            <div className="flex-1 min-h-[300px] relative">
+            <div className="flex-1 min-h-75 relative">
               <img
-                src="https://images.unsplash.com/photo-1592311201324-0c8ef9e66adb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHwyMHx8V29tYW4lMjB3aXRoJTIwaGVhZHBob25lcyUyMHNtaWxpbmclMjBhbmQlMjBlbmpveWluZyUyMG11c2ljJTIwb3IlMjBnYW1pbmclMkMlMjBjb2xvcmZ1bCUyMGxpZ2h0cyUyMGluJTIwYmFja2dyb3VuZCUyMGdhbWVyJTIwaGVhZHBob25lcyUyMG11c2ljJTIwaGFwcHklMjBsaWZlc3R5bGV8ZW58MHwwfHx8MTc4MDg2MjkzNHww&ixlib=rb-4.1.0&q=85"
+                src={Benefit}
                 className="absolute inset-0 w-full h-full object-cover"
                 alt="Results"
               />
@@ -90,9 +108,9 @@ export const BenefitsMasonry: React.FC = () => {
 
           {/* Card 3: Lifestyle (Yoga) */}
           <div className="lg:col-span-3 bg-white rounded-[40px] overflow-hidden shadow-lg flex flex-col">
-            <div className="flex-1 min-h-[240px] relative">
+            <div className="flex-1 min-h-60 relative">
               <img
-                src="https://images.pexels.com/photos/8436603/pexels-photo-8436603.jpeg"
+                src={Ballet}
                 className="absolute inset-0 w-full h-full object-cover"
                 alt="Flexible Coaching"
               />
@@ -118,8 +136,8 @@ export const BenefitsMasonry: React.FC = () => {
               </p>
               <div className="flex items-center gap-3">
                 <img
-                  src="https://i.pravatar.cc/100?u=mj"
-                  className="w-10 h-10 rounded-full grayscale"
+                  src={Jordan}
+                  className="w-10 h-10 rounded-full"
                   alt="Michael Jordan"
                 />
                 <span className="text-sm font-black uppercase tracking-widest text-brand-bg">

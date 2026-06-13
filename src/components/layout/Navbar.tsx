@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button } from "../common/Button";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 
+const KIT_FORM_ID = "3fc17e1b18";
 export const Navbar: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -61,6 +62,7 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center gap-4">
           <Button
             variant="primary"
+            data-formkit-toggle={KIT_FORM_ID}
             className="hidden sm:inline-flex !bg-white !text-brand-bg hover:!bg-brand-accent !rounded-lg !py-2 !px-5 !text-[13px] !font-bold"
           >
             Join the Community <ArrowUpRight size={16} />
@@ -89,6 +91,7 @@ export const Navbar: React.FC = () => {
             ))}
             <Button
               variant="primary"
+              data-formkit-toggle={KIT_FORM_ID}
               className="!bg-white !text-brand-bg !w-full justify-center"
             >
               Join the Community <ArrowUpRight size={18} />
