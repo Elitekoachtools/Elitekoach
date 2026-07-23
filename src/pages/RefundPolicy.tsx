@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, ArrowLeft } from 'lucide-react';
 import { Button } from '../components/common/Button';
 import { GlassCard } from '../components/common/GlassCard';
 
@@ -56,8 +56,9 @@ const RefundPolicy: React.FC = () => {
           <div className="mb-12">
             <button
               onClick={() => window.dispatchEvent(new CustomEvent('navigate', { detail: 'landing' }))}
-              className="text-white/40 hover:text-white text-xs font-bold uppercase tracking-widest mb-6 transition-colors"
+              className="flex items-center gap-2 text-white/40 hover:text-white text-xs font-bold uppercase tracking-widest mb-6 transition-colors self-start"
             >
+              <ArrowLeft size={16} />
               Back to Home
             </button>
             <h1 className="text-brand-accent font-sans uppercase tracking-widest text-xs font-bold mb-4">Refund & Cancellation Policy</h1>
@@ -82,7 +83,7 @@ const RefundPolicy: React.FC = () => {
 
             <GlassCard>
               <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">3. How to Cancel</h3>
-              <p>You can cancel your subscription through your account settings or by contacting us at legal@elitekoach.com. Please include your account details and the subscription or booking you wish to cancel.</p>
+              <p>You can cancel your subscription through your account settings or by contacting us at support@elitekoach.com. Please include your account details and the subscription or booking you wish to cancel.</p>
             </GlassCard>
 
             <GlassCard>
@@ -92,12 +93,12 @@ const RefundPolicy: React.FC = () => {
 
             <GlassCard>
               <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">5. Dispute Resolution</h3>
-              <p>If you are not satisfied with our refund decision, you may escalate the matter by contacting legal@elitekoach.com. We will review your case and respond within a reasonable timeframe.</p>
+              <p>If you are not satisfied with our refund decision, you may escalate the matter by contacting support@elitekoach.com. We will review your case and respond within a reasonable timeframe.</p>
             </GlassCard>
 
             <GlassCard>
               <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">6. Contact Us</h3>
-              <p>For refund and cancellation enquiries, please contact us at legal@elitekoach.com or through the contact form on our website.</p>
+              <p>For refund and cancellation enquiries, please contact us at support@elitekoach.com or through the contact form on our website.</p>
             </GlassCard>
           </div>
         </div>

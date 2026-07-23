@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, ArrowLeft } from 'lucide-react';
 import { Button } from '../components/common/Button';
 import { GlassCard } from '../components/common/GlassCard';
 
@@ -56,8 +56,9 @@ const CookiePolicy: React.FC = () => {
           <div className="mb-12">
             <button
               onClick={() => window.dispatchEvent(new CustomEvent('navigate', { detail: 'landing' }))}
-              className="text-white/40 hover:text-white text-xs font-bold uppercase tracking-widest mb-6 transition-colors"
+              className="flex items-center gap-2 text-white/40 hover:text-white text-xs font-bold uppercase tracking-widest mb-6 transition-colors self-start"
             >
+              <ArrowLeft size={16} />
               Back to Home
             </button>
             <h1 className="text-brand-accent font-sans uppercase tracking-widest text-xs font-bold mb-4">Cookie Policy</h1>
@@ -94,7 +95,7 @@ const CookiePolicy: React.FC = () => {
 
             <GlassCard>
               <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">Contact Us</h3>
-              <p>If you have questions about our Cookie Policy, please contact us at privacy@elitekoach.com or through the contact form on our website.</p>
+              <p>If you have questions about our Cookie Policy, please contact us at support@elitekoach.com or through the contact form on our website.</p>
             </GlassCard>
           </div>
         </div>
