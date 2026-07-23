@@ -121,7 +121,7 @@ export const BenefitsMasonry: React.FC = () => {
               </h4>
               <p className="text-xs text-brand-bg/50 leading-relaxed font-medium">
                 Access live sessions, on-demand resources, and tailored tracks
-                anytime, anywhere—perfect for your busy lifestyle.
+                anytime, anywhere perfect for your busy lifestyle.
               </p>
             </div>
           </div>
@@ -131,7 +131,7 @@ export const BenefitsMasonry: React.FC = () => {
             <div className="relative z-10 space-y-8">
               <p className="italic-serif text-2xl lg:text-3xl text-brand-bg leading-tight">
                 "My coach was my mentor, and he pushed me to be better than I
-                thought I could be. That's what great coaching does—it unlocks
+                thought I could be. That's what great coaching does. It unlocks
                 potential."
               </p>
               <div className="flex items-center gap-3">
@@ -165,14 +165,14 @@ export const BenefitsMasonry: React.FC = () => {
                   Coach Glen
                 </p>
                 <p className="text-[13px] text-brand-bg font-medium">
-                  Hey Glen, I just watched your tape—great work! I've got a few
+                  Hey Glen, I just watched your tape. Great work! I've got a few
                   tips to help take your performance to the next level.
                 </p>
               </div>
               <div className="bg-brand-accent p-4 rounded-2xl rounded-br-none shadow-sm max-w-[85%] self-end">
                 <p className="text-[13px] text-brand-bg font-bold">
                   Wow, this is incredible. Thanks so much for the quick
-                  feedback—this is going to help a ton! 🚀
+                  feedback. This is going to help a ton!
                 </p>
               </div>
             </div>

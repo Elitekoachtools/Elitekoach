@@ -39,7 +39,7 @@ export const FAQSection: React.FC = () => {
   const faqs = [
     {
       question: "What is EliteKoach?",
-      answer: "EliteKoach connects you with world-class coaches—celebrity experts, top performers, and industry leaders—who provide personalized advice and actionable feedback tailored to your goals. It's coaching redefined, designed to unlock your potential."
+      answer: "EliteKoach connects you with world-class coaches, celebrity experts, top performers, and industry leaders who provide personalized advice and actionable feedback tailored to your goals. It's coaching redefined, designed to unlock your potential."
     },
     {
       question: "How does it work?",

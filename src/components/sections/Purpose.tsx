@@ -38,7 +38,7 @@ export const Purpose: React.FC = () => {
             </p>
 
             <p className="text-base text-white/40 leading-relaxed">
-              Our advanced AI makes the experience seamless—helping users find the perfect coach for your goals and enabling coaches to create tailored content for their audience.
+              Our advanced AI makes the experience seamless, helping users find the perfect coach for your goals and enabling coaches to create tailored content for their audience.
             </p>
 
             <p className="text-base text-white/40 leading-relaxed">
