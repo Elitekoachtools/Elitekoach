@@ -53,14 +53,11 @@ export const Categories: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-20 items-center mb-24">
           <div className="space-y-10">
             <h2 className="section-title">
-              Coaching for Every <br />
-              Passion
+              Pursue Any <br />
+              Goal
             </h2>
             <p className="text-lg text-white/50 max-w-lg leading-relaxed font-medium">
-              Whether you're chasing your dreams, mastering a craft, or growing
-              your career, EliteKoach offers coaching across a wide range of
-              categories. Find the guidance you need from top professionals,
-              stars, and experts who are passionate about helping you succeed.
+              Whether you want to change your life, master a craft, or grow your career, EliteKoach uses AI-powered coach matching to help you find the right guidance. With Eli as your accountability partner, you'll stay on track and achieve what matters most.
             </p>
             <Button
               data-formkit-toggle={KIT_FORM_ID}

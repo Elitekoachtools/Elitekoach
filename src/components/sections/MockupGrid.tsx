@@ -8,23 +8,23 @@ import Mob4 from '../../assets/sneakpeak/mob-4.png'
 export const MockupGrid: React.FC = () => {
   const items = [
     {
-      title: "Join the Growth Community",
-      desc: "It all begins with a simple step – creating your account. Join a community of learners, seekers, and achievers, ready to level up together.",
+      title: "Speak to Eli",
+      desc: "Chat with Eli, your AI coach matching tool and accountability partner. Tell us your goals and Eli will help you find your ideal coach and keep you on track with daily check-ins.",
       img: Mob1,
     },
     {
       title: "Your goals, your way.",
-      desc: "Choose from a variety of categories that matter to you – whether it's career growth, personal wellness, or creative skills. Build a personalized experience aligned with your passions and priorities.",
+      desc: "Choose how you want to learn: book a live 1:1 coaching session, or send a video for personalised feedback from your coach. Your journey, your rules.",
       img: Mob2,
     },
     {
       title: "Find Your Perfect Coach",
-      desc: "Explore a diverse range of professional coaches with expertise tailored to your goals. Select the right coach who aligns with your unique aspirations.",
+      desc: "Eli matches you with coaches based on your unique goals, preferences, and coaching style. Get the right guidance for the life you want to build.",
       img: Mob3,
     },
     {
-      title: "Learn and grow with elite talent",
-      desc: "Book a session with your chosen coach to receive tailored feedback, expert insights, and actionable plans to improve. With their support, you'll tackle challenges, refine your skills, and grow beyond expectations.",
+      title: "Improve with daily accountability",
+      desc: "Book sessions or send videos for feedback, and use daily check-ins with Eli to stay mentally aligned. Turn ambition into achievement, one step at a time.",
       img: Mob4,
     },
   ];

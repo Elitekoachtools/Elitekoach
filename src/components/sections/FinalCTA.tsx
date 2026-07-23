@@ -12,9 +12,9 @@ export const FinalCTA: React.FC = () => {
       <div className="section-container">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="flex-1 space-y-10">
-            <h2 className="section-title">Take the Leap</h2>
+            <h2 className="section-title">Change Your Life</h2>
             <p className="text-xl text-white/50 max-w-md leading-relaxed">
-              Learn from legends. Build your legacy. Start today.
+              Pursue any goal. Build daily accountability. Start today.
             </p>
             <Button
               data-formkit-toggle={KIT_FORM_ID}

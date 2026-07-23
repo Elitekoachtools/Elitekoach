@@ -27,10 +27,10 @@ export const BenefitsMasonry: React.FC = () => {
             Benefits
           </span>
           <h2 className="section-title text-brand-bg text-center mb-6">
-            Achieve More With EliteKoach
+            Change Your Life With EliteKoach
           </h2>
           <p className="text-brand-bg/60 text-lg font-medium">
-            Exclusive coaching, real results, delivered to you.
+            Pursue any goal. Stay accountable. Get coached by the best.
           </p>
         </div>
 
