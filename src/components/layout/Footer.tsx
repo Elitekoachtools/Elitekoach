@@ -70,6 +70,8 @@ export const Footer: React.FC = () => {
               <li><a href="#about" className="hover:text-white transition-colors">About</a></li>
               <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "terms" }))} className="hover:text-white transition-colors">Terms</button></li>
               <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "privacy" }))} className="hover:text-white transition-colors">Privacy</button></li>
+              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "cookies" }))} className="hover:text-white transition-colors">Cookie Policy</button></li>
+              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "refund" }))} className="hover:text-white transition-colors">Refund Policy</button></li>
             </ul>
           </div>
 
@@ -89,6 +91,8 @@ export const Footer: React.FC = () => {
           <div className="flex items-center gap-6">
             <button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "terms" }))} className="hover:text-white transition-colors">Terms of Service</button>
             <button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "privacy" }))} className="hover:text-white transition-colors">Privacy Policy</button>
+            <button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "cookies" }))} className="hover:text-white transition-colors">Cookie Policy</button>
+            <button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "refund" }))} className="hover:text-white transition-colors">Refund Policy</button>
           </div>
         </div>
       </div>

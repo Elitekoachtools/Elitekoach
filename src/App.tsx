@@ -13,8 +13,10 @@ import { FinalCTA } from './components/sections/FinalCTA';
 import { Footer } from './components/layout/Footer';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
+import CookiePolicy from './pages/CookiePolicy';
+import RefundPolicy from './pages/RefundPolicy';
 
-type Page = 'landing' | 'privacy' | 'terms';
+type Page = 'landing' | 'privacy' | 'terms' | 'cookies' | 'refund';
 
 function App() {
   const [page, setPage] = useState<Page>('landing');
@@ -30,6 +32,8 @@ function App() {
 
   if (page === 'privacy') return <PrivacyPolicy />;
   if (page === 'terms') return <TermsOfService />;
+  if (page === 'cookies') return <CookiePolicy />;
+  if (page === 'refund') return <RefundPolicy />;
 
   return (
     <div className="min-h-screen bg-brand-bg text-white selection:bg-brand-accent selection:text-brand-bg">
