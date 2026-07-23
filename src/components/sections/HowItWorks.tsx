@@ -9,7 +9,7 @@ export const HowItWorks: React.FC = () => {
     {
       icon: <MessageCircle size={32} />,
       title: "Speak to Eli",
-      desc: "Chat with our AI coach matching tool to find your ideal coach based on your goals, preferences, and coaching style.",
+      desc: "Chat with Eli, your AI coach matching tool and accountability partner. Find your ideal coach based on your goals, and stay mentally aligned with daily check-ins.",
     },
     {
       icon: <Calendar size={32} />,

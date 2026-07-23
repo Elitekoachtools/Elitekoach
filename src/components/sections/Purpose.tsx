@@ -12,11 +12,11 @@ export const Purpose: React.FC = () => {
             
             <div className="relative">
                 <h2 className="section-title">
-                Transforming <br />
-                <span className="italic-serif text-[clamp(2.5rem,7vw,4.5rem)]">aspirations</span> into <br />
-                achievements with <br />
-                expert online <br />
-                coaching
+                Change your <br />
+                <span className="italic-serif text-[clamp(2.5rem,7vw,4.5rem)]">life</span> and <br />
+                pursue any <br />
+                goal you <br />
+                put your mind to
                 </h2>
 
                 <div className="flex -space-x-4 pt-10">
@@ -34,15 +34,15 @@ export const Purpose: React.FC = () => {
 
           <div className="space-y-10 pt-20">
             <p className="text-xl text-white/70 leading-relaxed font-medium text-balance">
-              At EliteKoach, we connect fans and learners with world-class celebrities, stars and professionals for personalised coaching. Users upload videos showcasing their skills or challenges, and in return, receive expert feedback, actionable tips, and advice from icons who've mastered their craft.
+              At EliteKoach, we believe anyone can change their life and pursue any goal they put their mind to. Our AI coach matching tool, Eli, connects you with the perfect coach and acts as your accountability partner—keeping you mentally aligned with daily check-ins to ensure you stay on track.
             </p>
 
             <p className="text-base text-white/40 leading-relaxed">
-              Our advanced AI makes the experience seamless—helping users find the perfect coach for your goals and enabling coaches to create tailored content for their audience.
+              Whether you want to book a live 1:1 session or send a video for personalised feedback, Eli makes the experience seamless and keeps you focused on your goals.
             </p>
 
             <p className="text-base text-white/40 leading-relaxed">
-              For users, it's a chance to learn from the best. For coaches, it's an opportunity to inspire and grow their influence. At EliteKoach, we're turning ambition into achievement.
+              Your mind sets the limit. With the right coach and daily accountability, you can achieve anything.
             </p>
           </div>
         </div>
