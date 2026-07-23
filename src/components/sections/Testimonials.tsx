@@ -65,7 +65,7 @@ export const Testimonials: React.FC = () => {
   const coach = coaches[current];
 
   return (
-    <section className="py-24 bg-brand-accent">
+    <section id="testimonials" className="py-24 bg-brand-accent">
       <div className="section-container">
         <div className="max-w-6xl mx-auto relative group">
           <div className="bg-white rounded-[40px] overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.1)] flex flex-col md:flex-row min-h-[500px]">

@@ -57,17 +57,17 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-3">
             <h3 className="text-xs font-semibold text-white/60 uppercase tracking-wider mb-4">Platform</h3>
             <ul className="space-y-3 text-sm text-white/40">
-              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "landing" }))} className="hover:text-white transition-colors">How It Works</button></li>
-              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "landing" }))} className="hover:text-white transition-colors">Benefits</button></li>
-              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "landing" }))} className="hover:text-white transition-colors">Testimonials</button></li>
-              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "landing" }))} className="hover:text-white transition-colors">FAQ</button></li>
+              <li><a href="#how-it-works" className="hover:text-white transition-colors">How It Works</a></li>
+              <li><a href="#benefits" className="hover:text-white transition-colors">Benefits</a></li>
+              <li><a href="#testimonials" className="hover:text-white transition-colors">Testimonials</a></li>
+              <li><a href="#faq" className="hover:text-white transition-colors">FAQ</a></li>
             </ul>
           </div>
 
           <div className="lg:col-span-2">
             <h3 className="text-xs font-semibold text-white/60 uppercase tracking-wider mb-4">Company</h3>
             <ul className="space-y-3 text-sm text-white/40">
-              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "landing" }))} className="hover:text-white transition-colors">About</button></li>
+              <li><a href="#about" className="hover:text-white transition-colors">About</a></li>
               <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "terms" }))} className="hover:text-white transition-colors">Terms</button></li>
               <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "privacy" }))} className="hover:text-white transition-colors">Privacy</button></li>
             </ul>
@@ -85,7 +85,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="py-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/30">
-          <p>© 2026 EliteKoach Limited. All rights reserved.</p>
+          <p>Â© 2026 EliteKoach Limited. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "terms" }))} className="hover:text-white transition-colors">Terms of Service</button>
             <button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "privacy" }))} className="hover:text-white transition-colors">Privacy Policy</button>

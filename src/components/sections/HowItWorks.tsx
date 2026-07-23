@@ -24,7 +24,7 @@ export const HowItWorks: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-brand-bg relative overflow-hidden">
+    <section id="how-it-works" className="py-24 bg-brand-bg relative overflow-hidden">
       <div className="section-container relative z-10">
         <div className="text-center mb-24">
           <span className="inline-block px-4 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] font-bold uppercase tracking-widest text-white/60 mb-8">
