@@ -8,10 +8,10 @@ export const Footer: React.FC = () => {
   }, []);
 
   return (
-    <footer className="bg-brand-bg text-slate-300 text-sm font-sans">
+    <footer className="bg-brand-bg border-t border-white/5">
       <div className="section-container">
-        <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-          <div className="lg:col-span-2 space-y-4 opacity-60">
+        <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+          <div className="lg:col-span-5 space-y-5">
             <div className="flex items-center gap-2">
               <svg
               width="168"
@@ -49,65 +49,46 @@ export const Footer: React.FC = () => {
               </defs>
             </svg>
             </div>
-            <div className="text-center md:text-left text-[11px] font-bold text-white/30 uppercase tracking-[0.2em] leading-relaxed">
-              <p>EliteKoach Limited</p>
-              <p>Registered in England and Wales</p>
-              <p>Company No. 15424569</p>
-              <p>Registered Office: 128 City Road, London, EC1V 2NX</p>
-              <p className="mt-2">© 2026 EliteKoach Limited. All rights reserved.</p>
-            </div>
+            <p className="text-white/40 text-sm leading-relaxed max-w-sm">
+              EliteKoach is an online platform that helps people discover professional coaches, book online coaching sessions, and receive personalised coaching and feedback.
+            </p>
           </div>
 
-          <div>
-            <h3 className="text-xs font-semibold text-slate-100 uppercase tracking-wider mb-4">For Coaches</h3>
-            <ul className="space-y-2.5">
-              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "landing" }))} className="hover:text-white transition-colors">Join as Coach</button></li>
+          <div className="lg:col-span-3">
+            <h3 className="text-xs font-semibold text-white/60 uppercase tracking-wider mb-4">Platform</h3>
+            <ul className="space-y-3 text-sm text-white/40">
               <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "landing" }))} className="hover:text-white transition-colors">How It Works</button></li>
-              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "landing" }))} className="hover:text-white transition-colors">Coach Resources</button></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-xs font-semibold text-slate-100 uppercase tracking-wider mb-4">Company</h3>
-            <ul className="space-y-2.5">
-              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "landing" }))} className="hover:text-white transition-colors">About Us</button></li>
-              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "landing" }))} className="hover:text-white transition-colors">Careers</button></li>
-              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "terms" }))} className="hover:text-white transition-colors">Terms of Service</button></li>
-              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "privacy" }))} className="hover:text-white transition-colors">Privacy Policy</button></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-xs font-semibold text-slate-100 uppercase tracking-wider mb-4">Support</h3>
-            <ul className="space-y-2.5">
-              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "landing" }))} className="hover:text-white transition-colors">Help Center</button></li>
-              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "landing" }))} className="hover:text-white transition-colors">Contact Us</button></li>
+              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "landing" }))} className="hover:text-white transition-colors">Benefits</button></li>
+              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "landing" }))} className="hover:text-white transition-colors">Testimonials</button></li>
               <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "landing" }))} className="hover:text-white transition-colors">FAQ</button></li>
             </ul>
           </div>
-        </div>
 
-        <div className="border-t border-slate-800"></div>
+          <div className="lg:col-span-2">
+            <h3 className="text-xs font-semibold text-white/60 uppercase tracking-wider mb-4">Company</h3>
+            <ul className="space-y-3 text-sm text-white/40">
+              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "landing" }))} className="hover:text-white transition-colors">About</button></li>
+              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "terms" }))} className="hover:text-white transition-colors">Terms</button></li>
+              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "privacy" }))} className="hover:text-white transition-colors">Privacy</button></li>
+            </ul>
+          </div>
 
-        <div className="py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
-            <button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "privacy" }))} className="hover:text-slate-200 transition-colors">Privacy Policy</button>
-            <button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "terms" }))} className="hover:text-slate-200 transition-colors">Terms of Service</button>
+          <div className="lg:col-span-2">
+            <h3 className="text-xs font-semibold text-white/60 uppercase tracking-wider mb-4">Legal</h3>
+            <ul className="space-y-3 text-sm text-white/40">
+              <li><span className="text-white/30">EliteKoach Limited</span></li>
+              <li><span className="text-white/30">Registered in England and Wales</span></li>
+              <li><span className="text-white/30">Company No. 15424569</span></li>
+              <li><span className="text-white/30 text-xs leading-relaxed">Registered Office: 128 City Road, London, EC1V 2NX</span></li>
+            </ul>
           </div>
         </div>
 
-        <div className="border-t border-slate-800 bg-slate-950 py-6 -mx-6 px-6">
-          <div className="text-xs text-slate-500 leading-relaxed space-y-2">
-            <p>
-              <strong>EliteKoach Limited</strong> is a company registered in England and Wales.
-              Company Registration Number: <strong>15424569</strong>.
-            </p>
-            <p>
-              Registered Office Address: 128 City Road, London, EC1V 2NX, United Kingdom.
-            </p>
-            <p>
-              © 2026 EliteKoach Limited. All rights reserved.
-            </p>
+        <div className="py-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/30">
+          <p>© 2026 EliteKoach Limited. All rights reserved.</p>
+          <div className="flex items-center gap-6">
+            <button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "terms" }))} className="hover:text-white transition-colors">Terms of Service</button>
+            <button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "privacy" }))} className="hover:text-white transition-colors">Privacy Policy</button>
           </div>
         </div>
       </div>
