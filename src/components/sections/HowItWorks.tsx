@@ -1,25 +1,25 @@
 import React from "react";
 import { Button } from "../common/Button";
-import { ArrowUpRight, Video, UserCheck, Activity } from "lucide-react";
+import { ArrowUpRight, MessageCircle, Calendar, Activity } from "lucide-react";
 
 const KIT_FORM_ID = "3fc17e1b18";
 
 export const HowItWorks: React.FC = () => {
   const steps = [
     {
-      icon: <Video size={32} />,
-      title: "Upload Your Video",
-      desc: "Capture a short video showcasing your skills, whether it's singing, pitching, gaming, football or any activity you want to master.",
+      icon: <MessageCircle size={32} />,
+      title: "Speak to Eli",
+      desc: "Chat with our AI coach matching tool to find your ideal coach based on your goals, preferences, and coaching style.",
     },
     {
-      icon: <UserCheck size={32} />,
-      title: "Send It to Your Coach",
-      desc: "Pick your coach from our experts, submit your request, and receive personalised, actionable advice tailored to your goals.",
+      icon: <Calendar size={32} />,
+      title: "Book or Send",
+      desc: "Choose how you want to learn: book a live 1:1 coaching session, or send a video for personalised feedback from your coach.",
     },
     {
       icon: <Activity size={32} />,
-      title: "Get Expert Insights & Improve",
-      desc: "Receive a video response packed with tips and strategies from your coach, helping you refine your skills and grow faster.",
+      title: "Improve",
+      desc: "Receive tailored coaching advice and actionable insights to help you grow and reach your goals faster.",
     },
   ];
 
