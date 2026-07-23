@@ -39,23 +39,23 @@ export const FAQSection: React.FC = () => {
   const faqs = [
     {
       question: "What is EliteKoach?",
-      answer: "EliteKoach connects you with world-class coaches, celebrity experts, top performers, and industry leaders who provide personalized advice and actionable feedback tailored to your goals. It's coaching redefined, designed to unlock your potential."
+      answer: "EliteKoach helps you change your life and pursue any goal you put your mind to. Our AI coach matching tool, Eli, connects you with the perfect coach and acts as your accountability partner, keeping you mentally aligned with daily check-ins."
     },
     {
       question: "How does it work?",
-      answer: "Simply upload a video of your performance or challenge, select your preferred coach, and receive a detailed video response with expert insights and actionable steps to improve."
+      answer: "Start by speaking to Eli about your dream and goals. Eli will match you with a tailored coach who fits your vision. From there, you can book a live 1:1 coaching session or send in a video for your coach to review and give personalised feedback."
     },
     {
       question: "Why should I use EliteKoach instead of other platforms?",
-      answer: "EliteKoach offers direct access to true 'stars' and elite professionals who typically aren't available for private coaching anywhere else, combined with an AI-enhanced experience for seamless matching."
+      answer: "EliteKoach gives you direct access to world-class coaches and elite professionals, combined with Eli, an AI-powered matching and accountability tool that keeps you on track towards your goals."
     },
     {
       question: "Is EliteKoach only for professionals?",
-      answer: "Not at all. EliteKoach is for anyone looking to level up their skills, from beginners to advanced performers across various categories."
+      answer: "Not at all. EliteKoach is for anyone looking to change their life, from beginners to advanced performers. Whether you want to master a craft, grow your career, or pursue a personal goal, Eli adapts to your level."
     },
     {
       question: "What if I'm too busy for regular sessions?",
-      answer: "EliteKoach is built for busy lifestyles. You can upload videos and receive feedback on your own schedule, with no need for live, synchronized sessions unless you choose to book one."
+      answer: "EliteKoach is built for busy lifestyles. You can book sessions or send videos on your own schedule, and Eli's daily check-ins take just a few minutes to keep you aligned and motivated."
     }
   ];
 
