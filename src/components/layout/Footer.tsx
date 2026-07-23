@@ -49,9 +49,13 @@ export const Footer: React.FC = () => {
             </svg>
           </div>
 
-          <p className="text-[11px] font-bold text-white/30 uppercase tracking-[0.2em]">
-            EliteKoach © 2026 - All rights reserved
-          </p>
+          <div className="text-center md:text-right text-[11px] font-bold text-white/30 uppercase tracking-[0.2em] leading-relaxed">
+            <p>EliteKoach Limited</p>
+            <p>Registered in England and Wales</p>
+            <p>Company No. 15424569</p>
+            <p>Registered Office: 128 City Road, London, EC1V 2NX</p>
+            <p className="mt-2">© 2026 EliteKoach Limited. All rights reserved.</p>
+          </div>
 
           <div className="flex items-center gap-8 text-[11px] font-bold text-white/40 uppercase tracking-widest">
             <button

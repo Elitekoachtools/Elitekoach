@@ -59,7 +59,7 @@ const TermsOfService: React.FC = () => {
               Terms & Conditions
             </h2>
             <p className="text-white/60 mt-4 text-lg max-w-2xl">
-              Last updated: June 2026
+              Last updated: July 2026
             </p>
           </div>
 
@@ -70,32 +70,52 @@ const TermsOfService: React.FC = () => {
             </GlassCard>
 
             <GlassCard>
-              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">2. Use of Services</h3>
-              <p>Our services are provided for personal, non-commercial use only. You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the service, use of the service, or access to the service without express written permission from EliteKoach.</p>
+              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">2. Platform Usage</h3>
+              <p>EliteKoach is an online software platform that helps people discover professional coaches, book online coaching sessions, and receive personalised coaching and feedback. By using the platform, you agree to use it only for lawful purposes and in accordance with these Terms.</p>
             </GlassCard>
 
             <GlassCard>
-              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">3. User Accounts</h3>
+              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">3. Subscriptions</h3>
+              <p>Some features of the platform may require a paid subscription. Subscription fees, billing cycles, and renewal terms will be clearly stated before you subscribe. You are responsible for all charges incurred under your account. Subscriptions may be cancelled at any time, and cancellation will take effect at the end of the current billing period unless otherwise stated.</p>
+            </GlassCard>
+
+            <GlassCard>
+              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">4. Bookings</h3>
+              <p>Coaching sessions booked through EliteKoach are subject to availability and coach confirmation. You are responsible for attending booked sessions at the agreed time. Cancellation and rescheduling policies will be communicated at the time of booking. No-shows or late cancellations may be subject to fees as specified in the booking confirmation.</p>
+            </GlassCard>
+
+            <GlassCard>
+              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">5. User Responsibilities</h3>
+              <p>You agree to provide accurate information when using the platform, to respect the rights of coaches and other users, and not to misuse or attempt to manipulate the platform. You are responsible for any content you submit or share through EliteKoach, including feedback and reviews.</p>
+            </GlassCard>
+
+            <GlassCard>
+              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">6. Coach Responsibilities</h3>
+              <p>Coaches using EliteKoach are independent professionals and are not employees of EliteKoach. Coaches are responsible for providing services with reasonable skill and care, maintaining appropriate qualifications, and complying with any professional standards applicable to their coaching practice. EliteKoach does not guarantee the advice, guidance, or outcomes provided by coaches on the platform.</p>
+            </GlassCard>
+
+            <GlassCard>
+              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">7. User Accounts</h3>
               <p>When you create an account with us, you must provide accurate and complete information. You are responsible for safeguarding the password that you use to access the service and for any activities or actions under your password. You agree not to disclose your password to any third party.</p>
             </GlassCard>
 
             <GlassCard>
-              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">4. Intellectual Property</h3>
+              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">8. Intellectual Property</h3>
               <p>The service and its original content, features, and functionality are and will remain the exclusive property of EliteKoach and its licensors. The service is protected by copyright, trademark, and other laws. Our trademarks may not be used in connection with any product or service without the prior written consent of EliteKoach.</p>
             </GlassCard>
 
             <GlassCard>
-              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">5. Limitation of Liability</h3>
+              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">9. Limitation of Liability</h3>
               <p>In no event shall EliteKoach, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses.</p>
             </GlassCard>
 
             <GlassCard>
-              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">6. Governing Law</h3>
-              <p>These Terms shall be governed and construed in accordance with the laws of the European Union and the Republic of Cyprus, without regard to conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.</p>
+              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">10. Governing Law</h3>
+              <p>These Terms shall be governed and construed in accordance with the laws of England and Wales. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.</p>
             </GlassCard>
 
             <GlassCard>
-              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">7. Contact Information</h3>
+              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">11. Contact Information</h3>
               <p>If you have any questions about these Terms of Service, please contact us at legal@elitekoach.com or through the contact form on our website.</p>
             </GlassCard>
           </div>
