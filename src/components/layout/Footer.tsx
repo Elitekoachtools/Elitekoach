@@ -10,8 +10,8 @@ export const Footer: React.FC = () => {
   return (
     <footer className="py-10 bg-brand-bg border-t border-white/5">
       <div className="section-container">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-2 opacity-60">
+          <div className="flex flex-col items-center md:items-start gap-4 opacity-60">
+            <div className="flex items-center gap-2">
             <svg
               width="168"
               height="24"
@@ -47,7 +47,14 @@ export const Footer: React.FC = () => {
                 </clipPath>
               </defs>
             </svg>
-          </div>
+            </div>
+            <div className="text-center md:text-left text-[11px] font-bold text-white/30 uppercase tracking-[0.2em] leading-relaxed">
+              <p>EliteKoach Limited</p>
+              <p>Registered in England and Wales</p>
+              <p>Company No. 15424569</p>
+              <p>Registered Office: 128 City Road, London, EC1V 2NX</p>
+              <p className="mt-2">© 2026 EliteKoach Limited. All rights reserved.</p>
+            </div>
 
           <div className="text-center md:text-right text-[11px] font-bold text-white/30 uppercase tracking-[0.2em] leading-relaxed">
             <p>EliteKoach Limited</p>
