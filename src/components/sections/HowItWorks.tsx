@@ -1,30 +1,30 @@
 import React from "react";
 import { Button } from "../common/Button";
-import { ArrowUpRight, MessageCircle, Calendar, Activity } from "lucide-react";
+import { ArrowUpRight, Video, UserCheck, Activity } from "lucide-react";
 
 const KIT_FORM_ID = "3fc17e1b18";
 
 export const HowItWorks: React.FC = () => {
   const steps = [
     {
-      icon: <MessageCircle size={32} />,
-      title: "Speak to Eli",
-      desc: "Chat with Eli, your AI coach matching tool and accountability partner. Find your ideal coach based on your goals, and stay mentally aligned with daily check-ins.",
+      icon: <Video size={32} />,
+      title: "Upload Your Video",
+      desc: "Capture a short video showcasing your skills, whether it's singing, pitching, gaming, football or any activity you want to master.",
     },
     {
-      icon: <Calendar size={32} />,
-      title: "Book or Send",
-      desc: "Choose how you want to learn: book a live 1:1 coaching session, or send a video for personalised feedback from your coach.",
+      icon: <UserCheck size={32} />,
+      title: "Send It to Your Coach",
+      desc: "Pick your coach from our experts, submit your request, and receive personalised, actionable advice tailored to your goals.",
     },
     {
       icon: <Activity size={32} />,
-      title: "Improve",
-      desc: "Receive tailored coaching advice and actionable insights to help you grow and reach your goals faster.",
+      title: "Get Expert Insights & Improve",
+      desc: "Receive a video response packed with tips and strategies from your coach, helping you refine your skills and grow faster.",
     },
   ];
 
   return (
-    <section id="how-it-works" className="py-24 bg-brand-bg relative overflow-hidden">
+    <section className="py-24 bg-brand-bg relative overflow-hidden">
       <div className="section-container relative z-10">
         <div className="text-center mb-24">
           <span className="inline-block px-4 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] font-bold uppercase tracking-widest text-white/60 mb-8">

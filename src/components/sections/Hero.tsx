@@ -48,13 +48,14 @@ export const Hero: React.FC = () => {
             </div>
 
             <h1 className="nike-heading">
-              Change Your <br />
-              Life. Pursue <br />
-              Any <span className="text-brand-accent">Goal</span>
+              Learn Directly <br />
+              From Your <br />
+              Favourite <span className="text-brand-accent">Stars</span>
             </h1>
 
             <p className="text-brand-muted text-lg max-w-md leading-relaxed">
-              Your mind sets the limit. With the right coach and daily accountability, you can achieve anything you put your mind to.
+              Access elite coaches who've been there, done that and can help you
+              do it too.
             </p>
 
             <Button
