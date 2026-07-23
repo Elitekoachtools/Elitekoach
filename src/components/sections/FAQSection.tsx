@@ -39,23 +39,23 @@ export const FAQSection: React.FC = () => {
   const faqs = [
     {
       question: "What is EliteKoach?",
-      answer: "EliteKoach is a platform that helps you change your life and pursue any goal you put your mind to. Our AI coach matching tool, Eli, connects you with the perfect coach and acts as your accountability partner, keeping you mentally aligned with daily check-ins."
+      answer: "EliteKoach connects you with world-class coaches—celebrity experts, top performers, and industry leaders—who provide personalized advice and actionable feedback tailored to your goals. It's coaching redefined, designed to unlock your potential."
     },
     {
       question: "How does it work?",
-      answer: "Start by speaking to Eli, your AI coach matching tool. Eli will help you find your ideal coach based on your goals. From there, you can either book a live 1:1 coaching session or send a video for personalised feedback. Eli also provides daily check-ins to keep you accountable and on track."
+      answer: "Simply upload a video of your performance or challenge, select your preferred coach, and receive a detailed video response with expert insights and actionable steps to improve."
     },
     {
-      question: "Do I need coaching experience?",
-      answer: "Not at all. EliteKoach is for anyone looking to change their life, from beginners to advanced performers. Eli adapts to your level and helps you build the right habits to achieve your goals."
+      question: "Why should I use EliteKoach instead of other platforms?",
+      answer: "EliteKoach offers direct access to true 'stars' and elite professionals who typically aren't available for private coaching anywhere else, combined with an AI-enhanced experience for seamless matching."
+    },
+    {
+      question: "Is EliteKoach only for professionals?",
+      answer: "Not at all. EliteKoach is for anyone looking to level up their skills, from beginners to advanced performers across various categories."
     },
     {
       question: "What if I'm too busy for regular sessions?",
-      answer: "EliteKoach is built for busy lifestyles. You can book sessions or send videos on your own schedule, and Eli's daily check-ins are designed to take just a few minutes to keep you aligned and motivated."
-    },
-    {
-      question: "How does Eli keep me accountable?",
-      answer: "Eli acts as your personal accountability partner. Through daily check-ins, Eli helps you stay focused on your goals, track your progress, and maintain the mental discipline needed to achieve lasting change."
+      answer: "EliteKoach is built for busy lifestyles. You can upload videos and receive feedback on your own schedule, with no need for live, synchronized sessions unless you choose to book one."
     }
   ];
 

@@ -48,13 +48,13 @@ export const Hero: React.FC = () => {
             </div>
 
             <h1 className="nike-heading">
-              Find Your <br />
-              Coach. Stay <br />
-              <span className="text-brand-accent">Accountable</span>.
+              Change Your <br />
+              Life. Pursue <br />
+              Any <span className="text-brand-accent">Goal</span>
             </h1>
 
             <p className="text-brand-muted text-lg max-w-md leading-relaxed">
-              Eli matches you with the perfect coach and keeps you on track with daily check-ins, so you can achieve any goal you put your mind to.
+              Your mind sets the limit. With the right coach and daily accountability, you can achieve anything you put your mind to.
             </p>
 
             <Button
