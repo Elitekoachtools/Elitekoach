@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
             </svg>
             </div>
             <p className="text-white/40 text-sm leading-relaxed max-w-sm">
-              EliteKoach is an online platform that helps people discover professional coaches, book online coaching sessions, and receive personalised coaching and feedback.
+              EliteKoach is a UK software platform that helps people discover professional coaches, book online coaching sessions and receive personalised coaching and feedback.
             </p>
           </div>
 
@@ -67,7 +67,7 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-2">
             <h3 className="text-xs font-semibold text-white/60 uppercase tracking-wider mb-4">Company</h3>
             <ul className="space-y-3 text-sm text-white/40">
-              <li><a href="#about" className="hover:text-white transition-colors">About</a></li>
+              <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "about" }))} className="hover:text-white transition-colors">About</button></li>
               <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "terms" }))} className="hover:text-white transition-colors">Terms</button></li>
               <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "privacy" }))} className="hover:text-white transition-colors">Privacy</button></li>
               <li><button onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "cookies" }))} className="hover:text-white transition-colors">Cookie Policy</button></li>
@@ -82,6 +82,7 @@ export const Footer: React.FC = () => {
               <li><span className="text-white/30">Registered in England and Wales</span></li>
               <li><span className="text-white/30">Company No. 15424569</span></li>
               <li><span className="text-white/30 text-xs leading-relaxed">Registered Office: 128 City Road, London, EC1V 2NX</span></li>
+              <li><span className="text-white/30 text-xs leading-relaxed">support@elitekoach.com</span></li>
             </ul>
           </div>
         </div>
