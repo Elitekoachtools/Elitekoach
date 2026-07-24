@@ -31,11 +31,41 @@ function App() {
     return () => window.removeEventListener('navigate', handler);
   }, []);
 
-  if (page === 'privacy') return <PrivacyPolicy />;
-  if (page === 'terms') return <TermsOfService />;
-  if (page === 'cookies') return <CookiePolicy />;
-  if (page === 'refund') return <RefundPolicy />;
-  if (page === 'about') return <About />;
+  if (page === 'privacy') return (
+    <div className="min-h-screen bg-brand-bg text-white selection:bg-brand-accent selection:text-brand-bg">
+      <Navbar />
+      <PrivacyPolicy />
+      <Footer />
+    </div>
+  );
+  if (page === 'terms') return (
+    <div className="min-h-screen bg-brand-bg text-white selection:bg-brand-accent selection:text-brand-bg">
+      <Navbar />
+      <TermsOfService />
+      <Footer />
+    </div>
+  );
+  if (page === 'cookies') return (
+    <div className="min-h-screen bg-brand-bg text-white selection:bg-brand-accent selection:text-brand-bg">
+      <Navbar />
+      <CookiePolicy />
+      <Footer />
+    </div>
+  );
+  if (page === 'refund') return (
+    <div className="min-h-screen bg-brand-bg text-white selection:bg-brand-accent selection:text-brand-bg">
+      <Navbar />
+      <RefundPolicy />
+      <Footer />
+    </div>
+  );
+  if (page === 'about') return (
+    <div className="min-h-screen bg-brand-bg text-white selection:bg-brand-accent selection:text-brand-bg">
+      <Navbar />
+      <About />
+      <Footer />
+    </div>
+  );
 
   return (
     <div className="min-h-screen bg-brand-bg text-white selection:bg-brand-accent selection:text-brand-bg">
