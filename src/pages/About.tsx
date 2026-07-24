@@ -71,12 +71,14 @@ const About: React.FC = () => {
           <div className="space-y-6 text-white/80 text-[15px] leading-relaxed font-sans">
             <GlassCard>
               <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">Our Mission</h3>
-              <p>To democratise world-class coaching and help anyone change their life by connecting them with the right coach and the right tools. We believe talent is everywhere, but opportunity is not. EliteKoach exists to bridge that gap.</p>
+              <p>We are EliteKoach, the operating system for ambition.</p>
+              <p className="mt-3">EliteKoach exists to help people become who they aspire to be by combining AI, expert coaching, accountability, learning, and community into one connected Personal Growth Operating System.</p>
             </GlassCard>
 
             <GlassCard>
               <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">Our Vision</h3>
-              <p>We imagine a world where geography, background, or income do not limit access to expert coaching. With Eli, our AI-powered matching and accountability partner, we want to make personalised guidance available to anyone, anywhere, at any stage of their journey.</p>
+              <p>We believe the next generation of personal growth will not be powered by isolated coaching sessions or disconnected productivity apps. It will be powered by intelligent systems that understand people's ambitions, connect them with the right expertise, keep them accountable and measure their progress over time.</p>
+              <p className="mt-3">EliteKoach is building the operating system that helps ambitious people become who they aspire to be.</p>
             </GlassCard>
 
             <GlassCard>
