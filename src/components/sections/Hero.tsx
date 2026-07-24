@@ -70,85 +70,97 @@ export const Hero: React.FC = () => {
 
           <div className="relative grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-4">
             {/* Card 1: TikTok */}
-            <div className="relative aspect-[4/5] sm:aspect-[4/3] rounded-3xl overflow-hidden group transform rotate-[-3deg] hover:rotate-0 transition-all duration-500 shadow-2xl">
-              <img
-                src={tiktokImg}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                alt="Theater"
-              />
-              <div className="absolute bottom-4 left-4 w-10 h-10 rounded-xl overflow-hidden border border-white/20 bg-brand-bg/50 backdrop-blur-sm p-1">
+            <div className="animate-bounce-in" style={{ animationDelay: '0ms' }}>
+              <div className="relative aspect-[4/5] sm:aspect-[4/3] rounded-3xl overflow-hidden group transform rotate-[-3deg] hover:rotate-0 transition-all duration-500 shadow-2xl">
                 <img
-                  src={tiktokIcon}
-                  className="w-full h-full object-contain"
-                  alt="TikTok"
+                  src={tiktokImg}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  alt="Theater"
                 />
+                <div className="absolute bottom-4 left-4 w-10 h-10 rounded-xl overflow-hidden border border-white/20 bg-brand-bg/50 backdrop-blur-sm p-1">
+                  <img
+                    src={tiktokIcon}
+                    className="w-full h-full object-contain"
+                    alt="TikTok"
+                  />
+                </div>
               </div>
             </div>
 
             {/* Card 2: YouTube */}
-            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden group transform translate-y-4 hover:translate-y-0 transition-all duration-500 shadow-2xl">
-              <img
-                src={youtubeImg}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                alt="Vlogger"
-              />
-              <div className="absolute top-4 right-4 w-10 h-10 rounded-xl overflow-hidden border border-white/20 bg-brand-bg/50 backdrop-blur-sm p-1">
+            <div className="animate-bounce-in" style={{ animationDelay: '80ms' }}>
+              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden group transform translate-y-4 hover:translate-y-0 transition-all duration-500 shadow-2xl">
                 <img
-                  src={youtubeIcon}
-                  className="w-full h-full object-contain"
-                  alt="YouTube"
+                  src={youtubeImg}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  alt="Vlogger"
                 />
+                <div className="absolute top-4 right-4 w-10 h-10 rounded-xl overflow-hidden border border-white/20 bg-brand-bg/50 backdrop-blur-sm p-1">
+                  <img
+                    src={youtubeIcon}
+                    className="w-full h-full object-contain"
+                    alt="YouTube"
+                  />
+                </div>
               </div>
             </div>
 
             {/* Card 3: Boxing */}
-            <div className="relative aspect-[4/5] sm:aspect-[4/3] rounded-3xl overflow-hidden group transform rotate-[2deg] hover:rotate-0 transition-all duration-500 shadow-2xl">
-              <img
-                src={boxingImg}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                alt="Boxing"
-              />
+            <div className="animate-bounce-in" style={{ animationDelay: '160ms' }}>
+              <div className="relative aspect-[4/5] sm:aspect-[4/3] rounded-3xl overflow-hidden group transform rotate-[2deg] hover:rotate-0 transition-all duration-500 shadow-2xl">
+                <img
+                  src={boxingImg}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  alt="Boxing"
+                />
+              </div>
             </div>
 
             {/* Card 4: Insta */}
-            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden group transform translate-x-4 hover:translate-x-0 transition-all duration-500 shadow-2xl">
-              <img
-                src={instaImg}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                alt="Instagram Model"
-              />
-              <div className="absolute top-4 left-4 w-10 h-10 rounded-xl overflow-hidden border border-white/20 bg-brand-bg/50 backdrop-blur-sm p-1">
+            <div className="animate-bounce-in" style={{ animationDelay: '240ms' }}>
+              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden group transform translate-x-4 hover:translate-x-0 transition-all duration-500 shadow-2xl">
                 <img
-                  src={instaIcon}
-                  className="w-full h-full object-contain"
-                  alt="Instagram"
+                  src={instaImg}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  alt="Instagram Model"
                 />
+                <div className="absolute top-4 left-4 w-10 h-10 rounded-xl overflow-hidden border border-white/20 bg-brand-bg/50 backdrop-blur-sm p-1">
+                  <img
+                    src={instaIcon}
+                    className="w-full h-full object-contain"
+                    alt="Instagram"
+                  />
+                </div>
               </div>
             </div>
 
             {/* Card 5: Spotify */}
-            <div className="relative aspect-square rounded-full overflow-hidden group transform -translate-y-8 rotate-[-5deg] hover:rotate-0 transition-all duration-500 shadow-2xl border-4 border-brand-bg">
-              <img
-                src={spotifyImg}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                alt="Singer"
-              />
-              <div className="absolute top-1/2 right-4 -translate-y-1/2 w-10 h-10 rounded-xl overflow-hidden border border-white/20 bg-brand-bg/50 backdrop-blur-sm p-1">
+            <div className="animate-bounce-in" style={{ animationDelay: '320ms' }}>
+              <div className="relative aspect-square rounded-full overflow-hidden group transform -translate-y-8 rotate-[-5deg] hover:rotate-0 transition-all duration-500 shadow-2xl border-4 border-brand-bg">
                 <img
-                  src={spotifyIcon}
-                  className="w-full h-full object-contain"
-                  alt="Spotify"
+                  src={spotifyImg}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  alt="Singer"
                 />
+                <div className="absolute top-1/2 right-4 -translate-y-1/2 w-10 h-10 rounded-xl overflow-hidden border border-white/20 bg-brand-bg/50 backdrop-blur-sm p-1">
+                  <img
+                    src={spotifyIcon}
+                    className="w-full h-full object-contain"
+                    alt="Spotify"
+                  />
+                </div>
               </div>
             </div>
 
             {/* Card 6: Businessman */}
-            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden group transform translate-y-2 rotate-[3deg] hover:rotate-0 transition-all duration-500 shadow-2xl">
-              <img
-                src={businessmanImg}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                alt="Coach"
-              />
+            <div className="animate-bounce-in" style={{ animationDelay: '400ms' }}>
+              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden group transform translate-y-2 rotate-[3deg] hover:rotate-0 transition-all duration-500 shadow-2xl">
+                <img
+                  src={businessmanImg}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  alt="Coach"
+                />
+              </div>
             </div>
           </div>
         </div>
