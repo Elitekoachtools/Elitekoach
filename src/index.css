@@ -17,18 +17,27 @@
     to { transform: translateX(-50%); }
   }
 
+  @keyframes fade-up {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
   @keyframes bounce-in {
-    0% { opacity: 0; transform: scale(0.3) translateY(40px); }
-    50% { opacity: 1; transform: scale(1.05) translateY(-10px); }
-    70% { transform: scale(0.9) translateY(4px); }
-    100% { opacity: 1; transform: scale(1) translateY(0); }
+    0% { opacity: 0; transform: scale(0.2) translateY(60px) rotate(-8deg); }
+    30% { opacity: 1; transform: scale(1.08) translateY(-8px) rotate(1deg); }
+    50% { transform: scale(0.94) translateY(6px) rotate(-1deg); }
+    70% { transform: scale(1.03) translateY(-3px) rotate(0.5deg); }
+    85% { transform: scale(0.98) translateY(1px) rotate(0deg); }
+    100% { opacity: 1; transform: scale(1) translateY(0) rotate(0deg); }
   }
 
   @keyframes bounce-in-left {
-    0% { opacity: 0; transform: scale(0.3) translateX(-40px); }
-    50% { opacity: 1; transform: scale(1.05) translateX(4px); }
-    70% { transform: scale(0.9) translateX(-2px); }
-    100% { opacity: 1; transform: scale(1) translateX(0); }
+    0% { opacity: 0; transform: scale(0.2) translateX(-60px) rotate(-8deg); }
+    30% { opacity: 1; transform: scale(1.08) translateX(6px) rotate(1deg); }
+    50% { transform: scale(0.94) translateX(-4px) rotate(-1deg); }
+    70% { transform: scale(1.03) translateX(2px) rotate(0.5deg); }
+    85% { transform: scale(0.98) translateX(-1px) rotate(0deg); }
+    100% { opacity: 1; transform: scale(1) translateX(0) rotate(0deg); }
   }
 }
 
@@ -68,12 +77,17 @@
   }
 
   @utility animate-bounce-in {
-    animation: bounce-in 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    animation: bounce-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     opacity: 0;
   }
 
   @utility animate-bounce-in-left {
-    animation: bounce-in-left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    animation: bounce-in-left 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    opacity: 0;
+  }
+
+  @utility animate-fade-up {
+    animation: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     opacity: 0;
   }
 

@@ -22,55 +22,59 @@ export const Hero: React.FC = () => {
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-10">
-            <div className="flex items-center gap-4">
-              <div className="flex -space-x-3">
-                {[1, 2, 3, 4, 5].map((i) => (
-                  <img
-                    key={i}
-                    src={`https://i.pravatar.cc/80?u=user${i}`}
-                    className="w-10 h-10 rounded-full border-2 border-brand-bg object-cover"
-                    alt=""
-                  />
-                ))}
-              </div>
-              <div className="flex flex-col">
-                <div className="flex gap-0.5 text-yellow-500">
-                  {[1, 2, 3, 4, 5].map((s) => (
-                    <span key={s} className="text-[10px]">
-                      ★
-                    </span>
+            <div className="animate-fade-up" style={{ animationDelay: '0ms' }}>
+              <div className="flex items-center gap-4">
+                <div className="flex -space-x-3">
+                  {[1, 2, 3, 4, 5].map((i) => (
+                    <img
+                      key={i}
+                      src={`https://i.pravatar.cc/80?u=user${i}`}
+                      className="w-10 h-10 rounded-full border-2 border-brand-bg object-cover"
+                      alt=""
+                    />
                   ))}
                 </div>
-                <span className="text-[11px] font-bold uppercase tracking-wider text-white/40">
-                  Join +10,000 strong community
-                </span>
+                <div className="flex flex-col">
+                  <div className="flex gap-0.5 text-yellow-500">
+                    {[1, 2, 3, 4, 5].map((s) => (
+                      <span key={s} className="text-[10px]">
+                        ★
+                      </span>
+                    ))}
+                  </div>
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-white/40">
+                    Join +10,000 strong community
+                  </span>
+                </div>
               </div>
             </div>
 
-            <h1 className="nike-heading">
+            <h1 className="nike-heading animate-fade-up" style={{ animationDelay: '150ms' }}>
               Learn Directly <br />
               From Your <br />
               Favourite <span className="text-brand-accent">Stars</span>
             </h1>
 
-            <p className="text-brand-muted text-lg max-w-md leading-relaxed">
+            <p className="text-brand-muted text-lg max-w-md leading-relaxed animate-fade-up" style={{ animationDelay: '300ms' }}>
               Access elite coaches who've been there, done that and can help you
               do it too.
             </p>
 
-            <Button
-              data-formkit-toggle={KIT_FORM_ID}
-              variant="primary"
-              className="!bg-brand-accent !text-brand-bg !rounded-lg !py-4 !px-8 !text-[15px] !font-black !w-fit group"
-            >
-              Join the Community{" "}
-              <ArrowUpRight className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-            </Button>
+            <div className="animate-fade-up" style={{ animationDelay: '450ms' }}>
+              <Button
+                data-formkit-toggle={KIT_FORM_ID}
+                variant="primary"
+                className="!bg-brand-accent !text-brand-bg !rounded-lg !py-4 !px-8 !text-[15px] !font-black !w-fit group"
+              >
+                Join the Community{" "}
+                <ArrowUpRight className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </Button>
+            </div>
           </div>
 
           <div className="relative grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-4">
             {/* Card 1: TikTok */}
-            <div className="animate-bounce-in" style={{ animationDelay: '0ms' }}>
+            <div className="animate-bounce-in" style={{ animationDelay: '100ms' }}>
               <div className="relative aspect-[4/5] sm:aspect-[4/3] rounded-3xl overflow-hidden group transform rotate-[-3deg] hover:rotate-0 transition-all duration-500 shadow-2xl">
                 <img
                   src={tiktokImg}
@@ -88,7 +92,7 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Card 2: YouTube */}
-            <div className="animate-bounce-in" style={{ animationDelay: '80ms' }}>
+            <div className="animate-bounce-in" style={{ animationDelay: '200ms' }}>
               <div className="relative aspect-[4/3] rounded-3xl overflow-hidden group transform translate-y-4 hover:translate-y-0 transition-all duration-500 shadow-2xl">
                 <img
                   src={youtubeImg}
@@ -106,7 +110,7 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Card 3: Boxing */}
-            <div className="animate-bounce-in" style={{ animationDelay: '160ms' }}>
+            <div className="animate-bounce-in" style={{ animationDelay: '300ms' }}>
               <div className="relative aspect-[4/5] sm:aspect-[4/3] rounded-3xl overflow-hidden group transform rotate-[2deg] hover:rotate-0 transition-all duration-500 shadow-2xl">
                 <img
                   src={boxingImg}
@@ -117,7 +121,7 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Card 4: Insta */}
-            <div className="animate-bounce-in" style={{ animationDelay: '240ms' }}>
+            <div className="animate-bounce-in" style={{ animationDelay: '400ms' }}>
               <div className="relative aspect-[4/3] rounded-3xl overflow-hidden group transform translate-x-4 hover:translate-x-0 transition-all duration-500 shadow-2xl">
                 <img
                   src={instaImg}
@@ -135,7 +139,7 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Card 5: Spotify */}
-            <div className="animate-bounce-in" style={{ animationDelay: '320ms' }}>
+            <div className="animate-bounce-in" style={{ animationDelay: '500ms' }}>
               <div className="relative aspect-square rounded-full overflow-hidden group transform -translate-y-8 rotate-[-5deg] hover:rotate-0 transition-all duration-500 shadow-2xl border-4 border-brand-bg">
                 <img
                   src={spotifyImg}
@@ -153,7 +157,7 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Card 6: Businessman */}
-            <div className="animate-bounce-in" style={{ animationDelay: '400ms' }}>
+            <div className="animate-bounce-in" style={{ animationDelay: '600ms' }}>
               <div className="relative aspect-[4/3] rounded-3xl overflow-hidden group transform translate-y-2 rotate-[3deg] hover:rotate-0 transition-all duration-500 shadow-2xl">
                 <img
                   src={businessmanImg}
