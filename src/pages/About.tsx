@@ -1,7 +1,8 @@
 import React from 'react';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, ArrowLeft } from 'lucide-react';
 import { Button } from '../components/common/Button';
 import { GlassCard } from '../components/common/GlassCard';
+import { Testimonials } from '../components/sections/Testimonials';
 
 const About: React.FC = () => {
   return (
@@ -56,8 +57,9 @@ const About: React.FC = () => {
           <div className="mb-12">
             <button
               onClick={() => window.dispatchEvent(new CustomEvent('navigate', { detail: 'landing' }))}
-              className="text-white/40 hover:text-white text-xs font-bold uppercase tracking-widest mb-6 transition-colors"
+              className="flex items-center gap-2 text-white/40 hover:text-white text-xs font-bold uppercase tracking-widest mb-6 transition-colors self-start"
             >
+              <ArrowLeft size={16} />
               Back to Home
             </button>
             <h1 className="text-brand-accent font-sans uppercase tracking-widest text-xs font-bold mb-4">About</h1>
@@ -66,7 +68,7 @@ const About: React.FC = () => {
             </h2>
           </div>
 
-          <div className="space-y-8 text-white/80 text-[15px] leading-relaxed font-sans">
+          <div className="space-y-6 text-white/80 text-[15px] leading-relaxed font-sans">
             <GlassCard>
               <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">Our Mission</h3>
               <p>To democratise world-class coaching and help anyone change their life by connecting them with the right coach and the right tools. We believe talent is everywhere, but opportunity is not. EliteKoach exists to bridge that gap.</p>
@@ -81,6 +83,10 @@ const About: React.FC = () => {
               <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">What the Platform Does</h3>
               <p>EliteKoach is a UK software platform where users speak to Eli to find a tailored coach, then choose how they want to learn. You can book a live 1:1 coaching session or send in a video for your coach to review. Eli also supports you with daily check-ins to keep you accountable.</p>
             </GlassCard>
+          </div>
+
+          <div className="mt-16">
+            <Testimonials />
           </div>
         </div>
       </main>

@@ -48,7 +48,7 @@ export const Navbar: React.FC = () => {
         </div>
 
         <div className="hidden lg:flex items-center gap-10 text-[13px] font-medium text-white/60">
-          {["Home", "About", "Benefits", "FAQ"].map((item) => (
+          {["Home", "Benefits", "FAQ"].map((item) => (
             <a
               href={`#${item.toLowerCase()}`}
               key={item}
@@ -57,6 +57,12 @@ export const Navbar: React.FC = () => {
               {item}
             </a>
           ))}
+          <button
+            onClick={() => window.dispatchEvent(new CustomEvent("navigate", { detail: "about" }))}
+            className="hover:text-white transition-colors"
+          >
+            About
+          </button>
         </div>
 
         <div className="flex items-center gap-4">
@@ -79,7 +85,7 @@ export const Navbar: React.FC = () => {
       {mobileOpen && (
         <div className="lg:hidden bg-brand-bg/95 backdrop-blur-xl border-b border-white/5 py-8">
           <div className="section-container flex flex-col gap-6">
-            {["Home", "About", "Benefits", "FAQ"].map((item) => (
+            {["Home", "Benefits", "FAQ"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -89,6 +95,15 @@ export const Navbar: React.FC = () => {
                 {item}
               </a>
             ))}
+            <button
+              onClick={() => {
+                window.dispatchEvent(new CustomEvent("navigate", { detail: "about" }));
+                setMobileOpen(false);
+              }}
+              className="text-lg font-medium text-white/70 hover:text-white text-left"
+            >
+              About
+            </button>
             <Button
               variant="primary"
               data-formkit-toggle={KIT_FORM_ID}
