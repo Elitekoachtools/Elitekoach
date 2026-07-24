@@ -85,7 +85,7 @@ const About: React.FC = () => {
             </GlassCard>
           </div>
 
-          <div className="mt-16">
+          <div className="mt-16 -mx-[calc((100vw-100%)/2)]">
             <Testimonials />
           </div>
         </div>
