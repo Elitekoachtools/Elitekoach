@@ -70,21 +70,16 @@ const About: React.FC = () => {
 
           <div className="space-y-6 text-white/80 text-[15px] leading-relaxed font-sans">
             <GlassCard>
-              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">Our Mission</h3>
-              <p>We are EliteKoach, the operating system for ambition.</p>
+              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">We Are</h3>
+              <p>EliteKoach, the operating system for ambition.</p>
               <p className="mt-3">EliteKoach exists to help people become who they aspire to be by combining AI, expert coaching, accountability, learning, and community into one connected Personal Growth Operating System.</p>
-            </GlassCard>
-
-            <GlassCard>
-              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">Our Vision</h3>
+           
+              <h3 className="text-white mt-8 font-bold text-lg mb-3 font-sans uppercase tracking-wider">Our Vision</h3>
               <p>We believe the next generation of personal growth will not be powered by isolated coaching sessions or disconnected productivity apps. It will be powered by intelligent systems that understand people's ambitions, connect them with the right expertise, keep them accountable and measure their progress over time.</p>
               <p className="mt-3">EliteKoach is building the operating system that helps ambitious people become who they aspire to be.</p>
             </GlassCard>
 
-            <GlassCard>
-              <h3 className="text-white font-bold text-lg mb-3 font-sans uppercase tracking-wider">What the Platform Does</h3>
-              <p>EliteKoach is a UK software platform where users speak to Eli to find a tailored coach, then choose how they want to learn. You can book a live 1:1 coaching session or send in a video for your coach to review. Eli also supports you with daily check-ins to keep you accountable.</p>
-            </GlassCard>
+       
           </div>
 
           <div className="mt-16 -mx-[calc((100vw-100%)/2)]">
